@@ -26,6 +26,7 @@
 		<div id="order">
 			
 		</div>
+		<div id="totalPrice"><br/></div>
 		<form id="orderStuff" class="orderStuff" name="orderStuff">
 			<input type="button" value="Order Chosen Items" onclick="alert('Thank you for your order!');">
 		</form>
@@ -70,7 +71,13 @@ $(document).ready(function(){
 			var str = '<div>' + names[i] + ': ' + prices[i] + '</div>';
 			orderDiv.innerHTML = orderDiv.innerHTML + str;
 		};
-		
+
+		var count = 0.00;
+		for (var i = prices.length - 1; i >= 0; i--) {
+			count += prices[i];
+		};
+		var priceDiv = document.getElementById('totalPrice');
+		priceDiv.innerHTML = priceDiv.innerHTML + "Total Price: £" + count.toFixed(2);
 
 		
 	}
