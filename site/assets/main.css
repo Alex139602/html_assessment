@@ -24,10 +24,18 @@ body{
 	min-height: 600px;
 }
 
+span.image{
+
+	max-width: 100px;
+	max-height: 60px;
+}
+
 .footer{
 	margin-top: 30px;
 }
-
+.right{
+	text-align: right;
+}
 a{
 	text-decoration: none;
 	color: #000000;
@@ -36,6 +44,15 @@ a:visited{
 	color: #000000;
 }
 
+img.smaller{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+td{
+	min-width: 80px;
+	min-height: 80px;
+}
 
 a:hover{
 	text-decoration: none;
@@ -60,7 +77,9 @@ a:active{
 .centerAlign{
 
 }
-
+.news{
+	margin-top: 100px;
+}
 img.svg{
 	width: 8%;
 	max-width: 200px;/*

@@ -5,8 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
 </head>
 <body>
+<div class="header">
+	<span class="floatLeft centerAlign"><h3>Windup Gaming &nbsp;&nbsp;</h3></span>
+	<span class="floatNone spinLogo">
+		<canvas width="100" height="100" id="canvas-gear-10"><img id="gear-10" class="svg" src="images/logo/gear-10.svg"></canvas>
+		<canvas width="100" height="100" id="canvas-gear-6"><img id="gear-6" class="svg" src="images/logo/gear-6.svg"></canvas>
+		<canvas width="100" height="100" id="canvas-gear-8"><img id="gear-8" class="svg" src="images/logo/gear-8.svg"></canvas>
+	</span>
+	<span id="nav" class="floatRight centerAlign">
+		<h3>&nbsp;&nbsp;
+		<a id="home.html" href="home.html">Home</a>  |  <a id="about.html" href="about.html">About</a>  |  <a id="contact.html" href="contact.html">Contact</a>  |  <a id="order.html" href="order.html">Order Games</a>  |  <a id="signup.html" href="signup.html">Sign Up</a></h3>
+	</span>
+</div>
+<div class="content">
+	<div class="news">
+		<div>
+			<form name="signup" id="signup">
+				<input type="text" name="email" id="email" > Please Enter Your Email<br/>
+				<input type="text" name="email" id="emailConfirm" > Please Confirm Your Email<br/>
+				<input type="BUTTON" value="Sign Up!" onclick="return submitData()">
+			</form>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<h5>Terms and Conditions Apply | For enquiries, please contact <a href="mailto:support@windupgaming.com">support@windupgaming.com</a></h5>
+</div>
+<script type="text/javascript" src="assets/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="assets/main.js"></script>
+<script type="text/javascript">
+	
+	function submitData(){
+		var email = $('#email').val();
+		var emailConfirm = $('#emailConfirm').val();
 
+		var atposEmail = email.indexOf('@');
+		var atposEmailConfirm = emailConfirm.indexOf('@');
+
+		if (atposEmail == -1 || atposEmailConfirm == -1) {
+			alert('PLease enter a valid email address in the boxes');
+			//break;
+		};
+
+		if (email == emailConfirm) {
+			alert('Thank you for signing up!');
+			return true;
+		} else{
+			alert('The entered emails are not equal, please retry.');
+			return false;
+		};
+	}
+	
+</script>
 </body>
 </html>

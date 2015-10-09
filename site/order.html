@@ -4,9 +4,198 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Order Games</title>
+	<title>Ordering</title>
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
 </head>
 <body>
+<div class="header">
+	<span class="floatLeft centerAlign"><h3>Windup Gaming &nbsp;&nbsp;</h3></span>
+	<span class="floatNone spinLogo">
+		<canvas width="100" height="100" id="canvas-gear-10"><img id="gear-10" class="svg" src="images/logo/gear-10.svg"></canvas>
+		<canvas width="100" height="100" id="canvas-gear-6"><img id="gear-6" class="svg" src="images/logo/gear-6.svg"></canvas>
+		<canvas width="100" height="100" id="canvas-gear-8"><img id="gear-8" class="svg" src="images/logo/gear-8.svg"></canvas>
+	</span>
+	<span id="nav" class="floatRight centerAlign">
+		<h3>&nbsp;&nbsp;
+		<a id="home.html" href="home.html">Home</a>  |  <a id="about.html" href="about.html">About</a>  |  <a id="contact.html" href="contact.html">Contact</a>  |  <a id="order.html" href="order.html">Order Games</a>  |  <a id="signup.html" href="signup.html">Sign Up</a></h3>
+	</span>
+</div>
+<div class="content">
+	<div class="order">
+		<div class="header"><h1>Order Games:</h1></div>
+		<form id="gamesForm" name="gamesForm" action="order_confirm.html">
 
+		<table>
+			<tr>
+				<td>
+					<span class="image"><img src="images/games/ark_survival_evolved.jpg"></span>
+				</td>
+				<td>
+					<span class="gameTitle"> Ark Survival Evolved: </span>
+				</td>
+				<td>
+					<span class="price">£19.99</span>
+				</td>
+				<td>
+					<span class="">Order Game <input type="checkbox" value="Ark_Survival_Evolved-19.99" name="gameChoice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="image"><img src="images/games/cs_go.jpg"></span>
+				</td>
+				<td>
+					<span class="gameTitle"> Counter Strike: <br/> Global Offensive: </span>
+				</td>
+				<td>
+					<span class="price">£11.99</span>
+				</td>
+				<td>
+					<span class="">Order Game <input type="checkbox" value="Counter_Strike_Global_Offensive-11.99" name="gameChoice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="image"><img src="images/games/fallout_4.jpg"></span>
+				</td>
+				<td>
+					<span class="gameTitle"> Fallout 4: </span>
+				</td>
+				<td>
+					<span class="price">£39.99</span>
+				</td>
+				<td>
+					<span class="">Order Game <input type="checkbox" value="Fallout_4-39.99" name="gameChoice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="image"><img src="images/games/grand_theft_auto_5.jpg"></span>
+				</td>
+				<td>
+					<span class="gameTitle"> Grand Theft <br/> Auto Five: </span>
+				</td>
+				<td>
+					<span class="price">£39.99</span>
+				</td>
+				<td>
+					<span class="">Order Game <input type="checkbox" value="Grand_Theft_Auto_5-39.99" name="gameChoice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="image"><img src="images/games/metal_gear_solid_5.jpg"></span>
+				</td>
+				<td>
+					<span class="gameTitle"> Metal Gear <br/> Solid Five: </span>
+				</td>
+				<td>
+					<span class="price">£39.99</span>
+				</td>
+				<td>
+					<span class="">Order Game <input type="checkbox" value="Metal_Gear_Solid_5-39.99" name="gameChoice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="image"><img src="images/games/rocket_league.jpg"></span>
+				</td>
+				<td>
+					<span class="gameTitle"> Rocket League: </span>
+				</td>
+				<td>
+					<span class="price">£17.99</span>
+				</td>
+				<td>
+					<span class="">Order Game <input type="checkbox" value="Rocket_League-17.99" name="gameChoice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="image"><img src="images/games/this_war_of_mine.jpg">
+				</td>
+				<td>
+					<span class="gameTitle"> This War <br/> Of Mine: </span>
+				</td>
+				<td>
+					<span class="price">£39.99</span>
+				</td>
+				<td>
+					<span class="">Order Game <input type="checkbox" value="This_War_Of_Mine-39.99" name="gameChoice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td >Accessories: </td><td></td><td></td><td></td>
+			</tr>
+			<tr>
+				<td>
+					<span class="image"><img class="smaller" src="images/games/z_other/fellowes_mouse_pad.jpg">
+				</td>
+				<td>
+					<span class="gameTitle"> Fellowes Mouse Pad: </span>
+				</td>
+				<td>
+					<span class="price">£9.99</span>
+				</td>
+				<td>
+					<span class="">Order Accessory <input type="checkbox" value="Fellows_Mouse_Pad-9.99" name="gameChoice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="image"><img class="smaller" src="images/games/z_other/razer_naga_mouse.jpg">
+				</td>
+				<td>
+					<span class="gameTitle"> Razer Naga Mouse: </span>
+				</td>
+				<td>
+					<span class="price">£49.99</span>
+				</td>
+				<td>
+					<span class="">Order Accessory <input type="checkbox" value="Razer_Hex_Mouse-49.99" name="gameChoice"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span class="image"><img class="smaller" src="images/games/z_other/razer_hex_mouse.jpg">
+				</td>
+				<td>
+					<span class="gameTitle"> Razer Hex Mouse: </span>
+				</td>
+				<td>
+					<span class="price">£69.99</span>
+				</td>
+				<td>
+					<span class="">Order Accessory <input type="checkbox" value="Razer_Hex_Mouse-69.99" name="gameChoice"></span>
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="4"><input type="submit" value="Order Chosen Items" onclick="return submitData()"></td>
+			</tr>
+			
+		</table>
+
+
+		
+		</form>
+	</div>
+<div class="footer">
+	<h5>Terms and Conditions Apply | For enquiries, please contact <a href="mailto:support@windupgaming.com">support@windupgaming.com</a></h5>
+</div>
+<script type="text/javascript" src="assets/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="assets/main.js"></script>
+<script type="text/javascript">
+
+	function submitData(){
+		var conf = confirm('Are you sure you want to order these Items?');
+		if (conf) {
+			return true;
+		} else{
+			return false;
+		};
+	}
+
+</script>
 </body>
 </html>
